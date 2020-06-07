@@ -1,0 +1,105 @@
+﻿@{
+    ViewBag.Title = "Riwayat Transfer";
+}
+
+@Styles.Render("~/Content/style.css")
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Transfer Saldo - Bank</title>
+</head>
+<body>
+    <h3 id="jumbo">Bank Konservatif</h3>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><b>Maribak Panjaitan</b></h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Transfer Saldo</a>
+                </li>
+                <li>
+                    <a href="#">Riwayat Transaksi</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><span class="fa fa-sign-out" aria-hidden="true"></span>Keluar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h3 class="text-left"><b>Transfer Saldo</b> | 7 Mei 2020</h3>
+                                <h5>Melakukan transaksi transfer saldo ke rekening 11318025245 sebesar Rp 1.200.000</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h3 class="text-left"><b>Transfer Saldo</b> | 7 Mei 2020</h3>
+                                <h5>Melakukan transaksi transfer saldo ke rekening 11318025245 sebesar Rp 1.200.000</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h3 class="text-left"><b>Transfer Saldo</b> | 7 Mei 2020</h3>
+                                <h5>Melakukan transaksi transfer saldo ke rekening 11318025245 sebesar Rp 1.200.000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- Butuh koneksi internet untuk menjalankan project,karena library dibawah ini di import dari luar library di Content-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
+

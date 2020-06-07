@@ -1,0 +1,147 @@
+﻿@{
+    ViewBag.Title = "Beranda";
+}
+
+@Styles.Render("~/Content/mystyle.css")
+<center>
+    <b><p><h2>Cari Pesawat dan Booking Hotel?</h2></p></b>
+    <br />
+    <h3 style="color:#AA96DA;">Travelancar Aja</h3>
+</center>
+
+<div class="row">
+    <div class="col-md-12">
+        <main>
+            <h3>Pilihan</h3>
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">Pesawat</label>
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">Hotel</label>
+
+
+
+            <section id="content1">
+                <!-- tag section pada saat di load akan disembunyikan ,ketika salah satu ID aktif atau radio button di klik,maka konten akan ditampilkan-->
+                <center><h4 style="font-family:sans-serif;">Pesan tiket pesawat anda</h4></center>
+                <h5><b>Bandara Asal</b></h5>
+                <select class="form-control" name="bandara_asal" aria-required="true" style="width:200px;">
+                    <option value="#">-- Bandara Asal --</option>
+                    <option value="bandara1">Jakarta, Indonesia</option>
+                    <option value="bandara2">Medan, Indonesia</option>
+                    <option value="bandara3">Bali, Indonesia</option>
+                </select>
+
+            </section>
+
+            <section id="content1">
+                <h5><b>Bandara Tujuan</b></h5>
+                <select class="form-control" name="bandara_tujuan" aria-required="true" style="width:200px;">
+                    <option value="#">-- Bandara Tujuan --</option>
+                    <option value="bandara1">Medan, Indonesia</option>
+                    <option value="bandara2">Surabaya, Indonesia</option>
+                    <option value="bandara3">Bali, Indonesia</option>
+                </select>
+            </section>
+
+            <section id="content1">
+
+                <form>
+                    <h5><b>Tanggal Pergi</b></h5>
+                    <select class="form-control" name="tanggal_pergi" aria-required="true" style="width:200px;">
+                        <option value="#">-- Tanggal --</option>
+                    </select>
+                </form>
+
+            </section>
+
+            <section id="content1">
+
+                <form>
+                    <h5><b>Tanggal Pulang</b></h5>
+                    <select class="form-control" name="tanggal_pulang" aria-required="true" style="width:200px;">
+                        <option value="#">-- Tanggal --</option>
+                    </select>
+                </form>
+
+            </section>
+
+            <section id="content1">
+                <h5><b>Penumpang</b></h5>
+                <select class="form-control" name="penumpang" aria-required="true" style="width:200px;">
+                    <option value="#">-- Penumpang --</option>
+                    <option value="penumpang1">Dewasa</option>
+                    <option value="penumpang2">Anak</option>
+                    <option value="penumpang3">Bayi</option>
+                </select>
+                <br />
+
+            </section>
+
+
+
+
+            <section id="content1">
+                <h5><b>Kelas Penerbangan</b></h5>
+                <select class="form-control" name="kelas_terbang" aria-required="true" style="width:200px;">
+                    <option value="#">-- Kelas Penerbangan --</option>
+                    <option value="kelas1">Ekonomi</option>
+                    <option value="kelas2">Premium</option>
+                    <option value="kelas3">Bisnis</option>
+                </select>
+                <br />
+                <center><button type="button" class="btn btn-warning" style="background-color:#F08A5D;">Cari Tiket</button></center>
+            </section>
+
+
+
+
+            <!-- Hotel -->
+
+
+            <section id="content2">
+                <center><h4 style="font-family:sans-serif;">Pesan hotel anda</h4></center>
+                <h5><b>Nama Hotel</b></h5>
+                <select class="form-control" name="nama_hotel" aria-required="true" style="width:200px;">
+                    <option value="#">-- Nama Hotel --</option>
+                    <option value="hotel1">Medan, Indonesia</option>
+                    <option value="hotel2">Jakarta, Indonesia</option>
+                    <option value="hotel3">Bali, Indonesia</option>
+                </select>
+                <br />
+
+            </section>
+
+            <section id="content2">
+                <h5><b>Check-In</b></h5>
+                <select class="form-control" name="check-in" aria-required="true" style="width:200px;">
+                    <option value="#">-- Tanggal --</option>
+                </select>
+            </section>
+
+            <section id="content2">
+                <h5><b>Check-Out</b></h5>
+                <select class="form-control" name="check-out" aria-required="true" style="width:200px;">
+                    <option value="#">-- Tanggal --</option>
+                </select>
+            </section>
+
+
+            <section id="content2">
+                <h5><b>Durasi</b></h5>
+                <select class="form-control" name="durasi" aria-required="true" style="width:200px;">
+                    <option value="#">-- Durasi --</option>
+                    <option value="durasi1">1 Malam</option>
+                    <option value="durasi2">2 Malam</option>
+                    <option value="durasi3">3 Malam</option>
+                </select>
+                <br />
+                <center><button type="button" class="btn btn-warning" style="background-color:#F08A5D;">Cari Hotel</button></center>
+            </section>
+
+            <br />
+        </main>
+
+
+    </div>
+</div>
+
